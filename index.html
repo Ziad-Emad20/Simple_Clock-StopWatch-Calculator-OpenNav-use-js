@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body id="toHome">
+    <!-- Start Navbar -->
+    <i class="fa-solid fa-bars"></i>
+    <nav>
+        <i class="fa-solid fa-xmark"></i>
+        <a href="#toHome" class="toHome">Home</a>
+        <a href="#toClock" class="toClock">clock</a>
+        <a href="#toCalculator" class="toCalculator">calculator</a>
+        <a href="#toStopWatch" class="toStopWatch">StopWatch</a>
+    </nav>
+    <!-- Start Clock  -->
+    <section class="container" id="toClock">
+        <div id="clock"></div>
+    </section>
+    <!-- Start Calculator -->
+    <section class="container" id="toCalculator">
+        <div class="calculator">
+            <div id="result"></div>
+            <div class="buttons">
+                <button onclick="clearValue()">C</button>
+                <button onclick="appValue('*')">*</button>
+                <button onclick="appValue('-')">-</button>
+                <button onclick="appValue('/')">/</button>
+                <button onclick="appValue('+')">+</button>
+                <button onclick="appValue('0')">0</button>
+                <button onclick="appValue('1')">1</button>
+                <button onclick="appValue('2')">2</button>
+                <button onclick="appValue('3')">3</button>
+                <button onclick="appValue('4')">4</button>
+                <button onclick="appValue('5')">5</button>
+                <button onclick="appValue('6')">6</button>
+                <button onclick="appValue('7')">7</button>
+                <button onclick="appValue('8')">8</button>
+                <button onclick="appValue('9')">9</button>
+                <button onclick="Calculator()">=</button>
+                <button>/</button>
+                <button>+</button>
+            </div>
+        </div>
+    </section>
+    <!-- Start StopWatch -->
+     <section class="container" id="toStopWatch">
+        <div class="container-StopWatch">
+            <div class="timerDisplay">
+                00 : 00 : 00 : 000
+            </div>
+            <div class="buttons">
+                <button id="start" >Start</button>
+                <button id="stop" >Stop</button>
+                <button id="reset" >Reset</button>
+            </div>
+            <button class="Anothor" ><a href="stopWatch.html" target="_blank" class="Anothor-a" >Anathor StopWatch</a></button>
+        </div>
+     </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
