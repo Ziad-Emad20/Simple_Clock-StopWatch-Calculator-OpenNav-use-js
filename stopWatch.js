@@ -1,4 +1,5 @@
-// Create a Stopwatch
+// Stop watch code 
+
 let [hours, minutes, seconds, milliseconds] = [0, 0, 0, 0];
 let timeRefresh = document.querySelector(".timerDisplay");
 let int = null;
